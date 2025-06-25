@@ -1,16 +1,6 @@
 if not game:IsLoaded() then
     game.Loaded:Wait(0.1)
 end
-CoreGui:SetCore("SendNotification", {
-
-    Title = "LYY OHIO",
-
-    Text = "自动捡物",
-
-    Duration = 0.1, 
-
-})
-loadstring(game:HttpGet("https://raw.githubusercontent.com/zjx902/lyyyijc/refs/heads/main/lyy%E5%8D%B0%E9%92%9E%E6%9C%BA%E6%BA%90%E7%A0%81.lua"))()
 local plrs = game:GetService("Players")
 local lp = plrs.LocalPlayer
 local mouse = lp:GetMouse()
@@ -67,6 +57,14 @@ gui:GetPropertyChangedSignal("Parent"):Connect(function()
         gui = false
     end
 end)
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "LYY OHIO";
+	Text = "Auto Pick Up Items";
+	Duration = math.huge;
+	Button1 = "Our QQ group is [910010179/LYY OHIO HUB]."
+
+})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zjx902/lyyyijc/refs/heads/main/lyy%E5%8D%B0%E9%92%9E%E6%9C%BA%E6%BA%90%E7%A0%81.lua"))()
 
 local mainFrame = Instance.new("Frame")
 mainFrame.Name = "mainFrame"
@@ -95,7 +93,7 @@ scriptName.BackgroundTransparency = 1.000
 scriptName.BorderSizePixel = 0
 scriptName.Size = UDim2.new(1, 0, 0, 30)
 scriptName.Font = Enum.Font.SourceSans
-scriptName.Text = "lyy单版 主群910010179"
+scriptName.Text = "主群910010179"
 scriptName.TextColor3 = Color3.fromRGB(255, 215, 0)
 scriptName.TextSize = 16.000
 scriptName.TextWrapped = true
@@ -174,6 +172,14 @@ local function notify(msg)
         end
     end)
 end
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "lyy";
+	Text = "您的支持就是我们来源的动力";
+	Duration = math.huge;
+	Button1 = "快手：我是lyy"
+
+})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lyynb666ezlol/wcnm666lyynb/refs/heads/main/1989288"))() 
 
 if gui.Parent == pg then
     notify("gui in playerGui")
@@ -367,7 +373,7 @@ autobankb.MouseButton1Click:Connect(function()
 end)
 
 -- 自动捡宝藏地图功能
-local autoPresent = makeutilbutton("自动捡钻石格洛克(已开)")
+local autoPreseant = makeutilbutton("自动捡钻石格洛克(已开)")
 local autoPresentt = true -- 默认开启
 autoPresent.MouseButton1Click:Connect(function()
     if autoPresentt == false then
@@ -401,7 +407,7 @@ autoPresent.MouseButton1Click:Connect(function()
     end
 end)
 -- 自动捡宝藏地图功能
-local autoPresent = makeutilbutton("自动捡钻石香蕉皮(已开)")
+local autoPresnent = makeutilbutton("自动捡钻石香蕉皮(已开)")
 local autoPresentt = true -- 默认开启
 autoPresent.MouseButton1Click:Connect(function()
     if autoPresentt == false then
@@ -504,7 +510,7 @@ automoneyprint.MouseButton1Click:Connect(function()
 end)
 
 -- 自动捡手提核弹箱功能
-local autoPresent = makeutilbutton("自动捡核弹(已开)")
+local autoPresment = makeutilbutton("自动捡核弹(已开)")
 local autoPresentt = true -- 默认开启
 autoPresent.MouseButton1Click:Connect(function()
     if autoPresentt == false then
@@ -783,7 +789,7 @@ autoairdrop1231.MouseButton1Click:Connect(function()
 end)
 
 -- 自动捡宝藏地图功能
-local autoPresent = makeutilbutton("自动捡宝藏地图(已开)")
+local autoPreshent = makeutilbutton("自动捡宝藏地图(已开)")
 local autoPresentt = true -- 默认开启
 autoPresent.MouseButton1Click:Connect(function()
     if autoPresentt == false then
@@ -818,7 +824,7 @@ autoPresent.MouseButton1Click:Connect(function()
 end)
 
 -- 自动捡直升飞机钥匙功能
-local autoPresent = makeutilbutton("自动捡直升飞机钥匙(已开)")
+local autoPreseknt = makeutilbutton("自动捡直升飞机钥匙(已开)")
 local autoPresentt = true -- 默认开启
 autoPresent.MouseButton1Click:Connect(function()
     if autoPresentt == false then
@@ -951,6 +957,6 @@ local autoredcrad = makeutilbutton("自动捡红卡(已开)")
                         end
                     end
                 end
-            end
+            end)
         end)
        
